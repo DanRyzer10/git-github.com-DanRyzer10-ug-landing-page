@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title.vue";
 import { fade } from 'astro:transitions';
+import Menu from "../components/Menu.astro";
 ---
 
 <Layout title="welcome to UG">
 	<main>
 		<section class="welcome">
+			<Menu></Menu>
 				<Title client:load/>
 			<div
 				class="absolute h-screen w-screen z-20 top-0 left-0"
@@ -15,10 +17,11 @@ import { fade } from 'astro:transitions';
 			</div>
 			<img
 				src="/background.png"
-				class="h-screen w-screen absolute filter-[blur(8px)] z-10 object-cover"
+				class="h-screen w-screen absolute z-10 object-cover"
 				alt=""
 			/>
 		</section>
+		
 	</main>
 </Layout>
 
