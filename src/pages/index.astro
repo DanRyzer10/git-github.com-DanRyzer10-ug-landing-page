@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Title.vue";
+import { fade } from 'astro:transitions';
+---
+
+<Layout title="welcome to UG">
+	<main>
+		<section class="welcome">
+				<Title client:load/>
+			<div
+				class="absolute h-screen w-screen z-20 top-0 left-0"
+				style="background-color: rgba(255, 255, 255, 0.75);"
+			>
+			</div>
+			<img
+				src="/background.png"
+				class="h-screen w-screen absolute filter-[blur(8px)] z-10 object-cover"
+				alt=""
+			/>
+		</section>
+	</main>
+</Layout>
+
+<style></style>
