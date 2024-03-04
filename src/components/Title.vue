@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute h-screen w-screen z-30 top-0 left-0 flex items-center justify-center">
+    <div class=" backgroundTitle absolute h-screen w-screen z-30 top-0 left-0 flex items-center justify-center">
         <h1 class="font-[Lora] font-normal text-6xl text-center animate-blurred-fade-in" >
             La mas <span  v-bind:class="title==='gloriosa'?'text-blue-light':(title==='importante'?'text-blue-mid':'text-blue-intense')" :class="isChange? 'animate-fade-in':''">{{title}}</span> del Ecuador
         </h1>
